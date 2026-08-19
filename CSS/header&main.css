@@ -269,11 +269,20 @@ body {
     height: 380px;
 }
 
-.energy_drinks{
+.energy_drinks {
     width: 291px;
     height: 380px;
     background-color: rgb(140, 221, 246);
     border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.energy_drinks_img_container {
+    width: 140px;
+    height: 190px;
+    margin-top: 30px;
+    overflow: hidden;
 }
 
 .energy_drinks_a_link{
@@ -283,9 +292,11 @@ body {
     text-decoration: none;
 }
 
-.energy_drinks_img{
+.energy_drinks_img {
     width: 140px;
     height: 190px;
+
+    transition: transform 0.4s ease;
 }
 
 .energy_drinks_p{
@@ -310,4 +321,171 @@ body {
 
 .energy_drinks_img{
     margin-top: 30px;
+}
+
+.energy_drinks:hover .energy_drinks_img {
+    transform: scale(1.08);
+}
+
+.nuggets{
+    margin-left: 20px;
+}
+
+.nugget_image_div{
+    position: relative;
+    width: 291px;
+    height: 380px;
+}
+
+.nugget_image{
+    width: 291px;
+    height: 380px;
+    display: block;
+}
+
+.nugget_p {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3b2b00;
+}
+
+.nugget_h3 {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #3b2b00;
+}
+
+.buynow {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3b2b00;
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Main moving bar */
+
+.moving_bar {
+    width: 100%;
+    height: 70px;
+
+    overflow: hidden;
+
+    background-color: #f5f5f5;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Content */
+
+.moving_content {
+    display: flex;
+    align-items: center;
+
+    width: max-content;
+
+    animation: moving 20s linear infinite;
+}
+
+
+/* Each item */
+
+.moving_item {
+    display: flex;
+    align-items: center;
+
+    margin-right: 70px;
+
+    white-space: nowrap;
+}
+
+
+/* Icons */
+
+.moving_icon {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    margin-right: 12px;
+}
+
+
+/* Different colors just for testing */
+
+.icon_1 {
+    background-color: #8bc34a;
+}
+
+.icon_2 {
+    background-color: #ff9800;
+}
+
+.icon_3 {
+    background-color: #2196f3;
+}
+
+.icon_4 {
+    background-color: #9c27b0;
+}
+
+.icon_5 {
+    background-color: #f44336;
+}
+
+
+/* Text */
+
+.moving_item span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* Animation */
+
+@keyframes moving {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+.animated_nav{
+    margin-top: 20px;
 }
