@@ -332,6 +332,7 @@ body {
 .link_a_link {
     color: #9d9a9a;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .title_of_box{
@@ -339,6 +340,7 @@ body {
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .slider_scrollbar {
@@ -352,4 +354,19 @@ body {
     width: 30%;
     height: 100%;
     background-color: #8cbc67;
+}
+
+.weekly_discount{
+    margin-top: 100px;
+
+}
+
+.title_of_weekly_discount{
+    display: flex;
+    align-items: center;
+}
+
+.h2_weekly_discount{
+    margin-left: 10px;
+    font-weight: 300;
 }
