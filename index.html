@@ -50,57 +50,60 @@
                     </ul>
                 </div>
 
-                <div class="bottom_header">
-                    <div class="first_item_in_header">
-                        <a href="#" class="logo_a_link_img"><img
-                                src="https://woodmart.xtemos.com/vegetables/wp-content/uploads/sites/20/2024/02/vg-logo-colored.svg"
-                                class="logo_img"></a>
-                    </div>
-
-                    <div class="second_item_in_header">
-                        <a href="#" class="all_categories_a_link">
-                            <span class="all_categories_a_link_img_span"><img src="./images/icons8-menu-20.png"></span>
-                            <span>All Categories</span>
-                        </a>
-                        <div class="search_box">
-                            <img src="./images/icons8-search-24.png" alt="" class="search_img">
-                            <span class="search_box_text">Search for product</span>
+                <div class="bottom_header_wrapper">
+                    <div class="bottom_header" id="bottomHeader">
+                        <div class="first_item_in_header">
+                            <a href="#" class="logo_a_link_img"><img
+                                    src="https://woodmart.xtemos.com/vegetables/wp-content/uploads/sites/20/2024/02/vg-logo-colored.svg"
+                                    class="logo_img"></a>
                         </div>
-                        <div class="second_item_ul">
-                            <ul class="three_links">
-                                <li class="second_item_li">
-                                    <a href="#" class="three_links_a">
-                                        <img src="https://woodmart.xtemos.com/vegetables/wp-content/uploads/sites/20/2024/02/vg-popular.svg"
-                                            alt="" class="three_links_a_img">Promotions
-                                    </a>
-                                </li>
-                                <li class="second_item_li">
-                                    <a href="#" class="three_links_a"><img
-                                            src="https://woodmart.xtemos.com/vegetables/wp-content/uploads/sites/20/2024/02/vg-ideas-for-breakfast.svg"
-                                            alt="" class="three_links_a_img">Ideas For Breakfast
-                                    </a>
 
-                                </li>
-                                <li class="second_item_li">
-                                    <a href="#" class="three_links_a">
-                                        <img src="https://woodmart.xtemos.com/vegetables/wp-content/uploads/sites/20/2024/02/vg-discount.svg"
-                                            alt="" class="three_links_a_img">Weekly Discount
-                                    </a>
+                        <div class="second_item_in_header">
+                            <a href="#" class="all_categories_a_link">
+                                <span class="all_categories_a_link_img_span"><img
+                                        src="./images/icons8-menu-20.png"></span>
+                                <span>All Categories</span>
+                            </a>
+                            <div class="search_box" id="searchBox">
+                                <img src="./images/icons8-search-24.png" alt="" class="search_img">
+                                <span class="search_box_text">Search for product</span>
+                            </div>
+                            <div class="second_item_ul">
+                                <ul class="three_links">
+                                    <li class="second_item_li">
+                                        <a href="#" class="three_links_a">
+                                            <img src="https://woodmart.xtemos.com/vegetables/wp-content/uploads/sites/20/2024/02/vg-popular.svg"
+                                                alt="" class="three_links_a_img">Promotions
+                                        </a>
+                                    </li>
+                                    <li class="second_item_li">
+                                        <a href="#" class="three_links_a"><img
+                                                src="https://woodmart.xtemos.com/vegetables/wp-content/uploads/sites/20/2024/02/vg-ideas-for-breakfast.svg"
+                                                alt="" class="three_links_a_img">Ideas For Breakfast
+                                        </a>
 
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li class="second_item_li">
+                                        <a href="#" class="three_links_a">
+                                            <img src="https://woodmart.xtemos.com/vegetables/wp-content/uploads/sites/20/2024/02/vg-discount.svg"
+                                                alt="" class="three_links_a_img">Weekly Discount
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="third_item_in_header">
-                        <a href="#" class="number_of_shopping_cart_a_link">
-                            <div class="shopping_cart">
-                                <img src="./images/icons8-shopping-cart-28.png" alt="" class="shopping_cart_icon">
-                            </div>
-                            <div class="number_of_shopping_cart">
-                                <span class="number_of_shopping_cart_span">0</span>
-                            </div>
-                        </a>
+                        <div class="third_item_in_header">
+                            <a href="#" class="number_of_shopping_cart_a_link">
+                                <div class="shopping_cart">
+                                    <img src="./images/icons8-shopping-cart-28.png" alt="" class="shopping_cart_icon">
+                                </div>
+                                <div class="number_of_shopping_cart">
+                                    <span class="number_of_shopping_cart_span">0</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -419,7 +422,8 @@
                 </section>
                 <section class="weekly_discount">
                     <div class="title_of_weekly_discount">
-                        <img src="https://woodmart.xtemos.com/vegetables/wp-content/uploads/sites/20/2024/02/vg-primary-discount.svg" alt="">
+                        <img src="https://woodmart.xtemos.com/vegetables/wp-content/uploads/sites/20/2024/02/vg-primary-discount.svg"
+                            alt="">
                         <h2 class="h2_weekly_discount">
                             Weekly Discount
                         </h2>
@@ -434,7 +438,66 @@
 
         </div>
     </div>
+    <div class="search_overlay" id="searchOverlay">
 
+        <div class="search_overlay_content">
+    
+            <div class="search_overlay_top">
+    
+                <div class="search_input_box">
+
+                    <input 
+                        type="text" 
+                        id="searchInput"
+                        placeholder="Search for products..."
+                        autocomplete="off"
+                    >
+                    <select id="search_dropdown" class="search_dropdown">
+                        <option value="" disabled selected>SELECT CATEGORY</option>
+                        <option value="Vegetable" class="dropdown_option">Vegetable & Fruits</option>
+                        <option value="bakery" class="dropdown_option">Bakery</option>
+                        <option value="Beverages" class="dropdown_option">Beverages</option>
+                        <option value="dairy" class="dropdown_option">Dairy</option>
+                        <option value="Seafood" class="dropdown_option">Seafood</option>
+                        <option value="VeganMeat" class="dropdown_option">Vegan Meat</option>
+                    </select>
+
+                    <button class="search_button">
+                        <img src="./images/icons8-search-24.png" alt="">
+                    </button>                
+                </div>
+    
+                <button class="close_search" id="closeSearch">
+                    &times;
+                </button>
+    
+            </div>
+    
+            <div class="search_suggestions">
+    
+                <h3>POPULAR REQUEST</h3>
+    
+                <div class="suggestion_items">
+    
+                    <a href="#">Vegetables</a>
+                    <a href="#">Fresh Fruits</a>
+                    <a href="#">Milk</a>
+                    <a href="#">Energy Drinks</a>
+                    <a href="#">Vegan Meat</a>
+                    <a href="#">Bakery</a>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+
+
+
+    <script src="./JAVA SCRIPT/header.js"></script>
 </body>
 
 </html>
