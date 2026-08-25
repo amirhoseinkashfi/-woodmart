@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .top_main_div {
     display: flex;
     margin-top: 15px;
@@ -169,18 +175,10 @@
     text-decoration: underline;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: Arial, sans-serif;
 }
-
-
-/* Main moving bar */
 
 .moving_bar {
     width: 100%;
@@ -345,28 +343,294 @@ body {
 
 .slider_scrollbar {
     width: 100%;
-    height: 4px;
-    background-color: #ddd;
+    height: 3px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
     margin-top: 20px;
+    overflow: hidden;
 }
 
+
 .slider_scrollbar_progress {
-    width: 30%;
+    width: 66%;
     height: 100%;
     background-color: #8cbc67;
+    border-radius: 10px;
+    transform: translateX(0);
+    transition: transform 0.1s linear;
 }
+
+
+/* WEEKLY DISCOUNT */
 
 .weekly_discount{
     margin-top: 100px;
-
+    margin-bottom: 20px;
 }
 
 .title_of_weekly_discount{
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .h2_weekly_discount{
     margin-left: 10px;
     font-weight: 300;
+}
+
+.weekly_discount_slider {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+}
+
+.weekly_discount_slider img {
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.weekly_discount_slider::-webkit-scrollbar {
+    display: none;
+}
+
+.weekly_discount_track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+
+.discount_product_box {
+    position: relative;
+
+    flex: 0 0 250px;
+    width: 250px;
+    height: 340px;
+
+    border-radius: 5px;
+    background-color: #fff;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+}
+
+.discount_product_wrapper:hover .discount_product_box {
+    transform: translateY(-10px);
+}
+
+.discount_product_actions {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    gap: 8px;
+
+    padding: 10px;
+
+    background-color: #fff;
+
+    opacity: 0;
+
+    transform: translateY(100%);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+    z-index: 10;
+}
+
+.discount_product_box:hover .discount_product_actions {
+    opacity: 1;
+    transform: translateY(0);
+}
+.product_quantity {
+    width: 90px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.product_quantity button {
+    width: 30px;
+    height: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quantity_number {
+    font-size: 14px;
+}
+
+.add_to_cart {
+    flex: 1;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8cbc67;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.discount_product_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount_product_image img{
+    width: 180px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.discount_product_info {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    background-color: #fff;
+
+    padding-bottom: 10px;
+
+    transition: transform 0.3s ease;
+
+    z-index: 5;
+}
+
+.discount_product_box:hover .discount_product_info {
+    transform: translateY(-60px);
+}
+
+.discount_product_info h3{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.title_of_discount_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.title_of_discount_box img{
+    margin-right: 10px;
+}
+
+.discount_product_price{
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.old_price{
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #9d9a9a;
+}
+
+.current_price{
+    color: #8cbc67;
+}
+
+.weekly_discount_slider_wrapper {
+    width: 100%;
+}
+
+.discount_product_wrapper {
+    position: relative;
+    flex: 0 0 250px;
+    width: 250px;
+    height: 360px;
+}
+
+.slash_product{
+    margin: 0px 5px;
+    color: #9d9a9a;
+}
+
+.count_of_product{
+    color: #9d9a9a;
+}
+
+/* ===== WEEKLY DISCOUNT SCROLLBAR ===== */
+
+.slider_scrollbar_discount {
+    width: 100%;
+    height: 3px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    margin-top: 0px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slider_scrollbar_progress_discount {
+    width: 50%;
+    height: 100%;
+    background-color: #8cbc67;
+    border-radius: 10px;
+
+    transform: translateX(0);
+
+    transition: transform 0.05s linear;
+
+    pointer-events: none;
+}
+
+
+/* ===== WEEKLY DISCOUNT SLIDER ===== */
+
+.weekly_discount_slider {
+    cursor: pointer;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    -webkit-user-drag: none;
+}
+
+
+.weekly_discount_slider.dragging {
+    cursor: pointer;
+
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.weekly_discount_slider img {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+
+.weekly_discount_slider a {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* VEGETABLE AND FRUIT */
+
+.fruit_and_vegetable{
+    margin-top: 100px;
+    margin-bottom: 20px;
 }
