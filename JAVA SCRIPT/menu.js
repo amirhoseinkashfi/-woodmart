@@ -7,6 +7,9 @@ const seafoodproductstrack = document.querySelector(".seafood_products_track")
 const bakeryproduct = document.querySelector(".bakery_products_track")
 const veganmeat = document.querySelector(".vegan_meat_products_track")
 const data_url = "./data/products.json";
+const topFooterContent = document.getElementById("topFooterContent");
+const topFooterButton = document.getElementById("topFooterButton");
+
 
 
 
@@ -620,3 +623,12 @@ fetch(data_url)
         });
 
     })
+
+
+// HIDE/SHOW THE TOP FOOTER
+
+topFooterButton.addEventListener("click", () => {
+
+    topFooterContent.classList.toggle("expanded");
+
+});
