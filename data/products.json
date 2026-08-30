@@ -17,7 +17,7 @@
         "method": "fresh",
         "rate": 4.5,
         "weight": "each",
-        "image_address": "./Product-image/Tomato_je.jpg"
+        "image_address": "../Product-image/Tomato_je.jpg"
     },
 
     {
@@ -38,7 +38,7 @@
         "method": "fresh",
         "rate": 5,
         "weight": "each",
-        "image_address": "./Product-image/cucumber.jpg"
+        "image_address": "../Product-image/cucumber.jpg"
     },
 
     {
@@ -59,7 +59,7 @@
         "method": "fresh",
         "rate": 4.0,
         "weight": "each",
-        "image_address": "./Product-image/Aubergine.jpg"
+        "image_address": "../Product-image/Aubergine.jpg"
     },
 
     {
@@ -80,7 +80,7 @@
         "method": "fresh",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/Leek.jpg"
+        "image_address": "../Product-image/Leek.jpg"
     },
 
     {
@@ -101,7 +101,7 @@
         "method": "fresh",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/Baby tomato.jpg"
+        "image_address": "../Product-image/Baby tomato.jpg"
     },
 
     {
@@ -122,7 +122,7 @@
         "method": "fresh",
         "rate": 4.5,
         "weight": "each",
-        "image_address": "./Product-image/Poppers.jpg"
+        "image_address": "../Product-image/Poppers.jpg"
     },
 
     {
@@ -143,7 +143,7 @@
         "method": "fresh",
         "rate": 5.0,
         "weight": "each",
-        "image_address": "./Product-image/Corn on the Cob.jpg"
+        "image_address": "../Product-image/Corn on the Cob.jpg"
     },
 
     {
@@ -164,7 +164,7 @@
         "method": "fresh",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/cabbage white.jpg"
+        "image_address": "../Product-image/cabbage white.jpg"
     },
 
     {
@@ -185,7 +185,7 @@
         "method": "fresh",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/Lemon Lime.jpg"
+        "image_address": "../Product-image/Lemon Lime.jpg"
     },
 
     {
@@ -206,7 +206,7 @@
         "method": "fresh",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/Energy Drink Matcha.jpg"
+        "image_address": "../Product-image/Energy Drink Matcha.jpg"
     },
 
     {
@@ -227,7 +227,7 @@
         "method": "fresh",
         "rate": 4.5,
         "weight": "each",
-        "image_address": "./Product-image/Atlantic Salmon Portion.jpg"
+        "image_address": "../Product-image/Atlantic Salmon Portion.jpg"
     },
 
     {
@@ -248,7 +248,7 @@
         "method": "fresh",
         "rate": 4.5,
         "weight": "500g",
-        "image_address": "./Product-image/Ora King Salmon.jpg"
+        "image_address": "../Product-image/Ora King Salmon.jpg"
     },
 
     {
@@ -269,7 +269,7 @@
         "method": "fresh",
         "rate": 4.5,
         "weight": "500g",
-        "image_address": "./Product-image/Ocean Trout.jpg"
+        "image_address": "../Product-image/Ocean Trout.jpg"
     },
 
     {
@@ -285,12 +285,12 @@
         "carbohydrates": 3.50,
         "shelf_life": 20,
         "storage_temperature": "7...15",
-        "country": "Spain",
+        "country": "spain",
         "genus_species": "Meal",
         "method": "frozen",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/Flax Oat Pita.jpg"
+        "image_address": "../Product-image/Flax Oat Pita.jpg"
     },
 
     {
@@ -306,12 +306,12 @@
         "carbohydrates": 3.50,
         "shelf_life": 20,
         "storage_temperature": "7...15",
-        "country": "Spain",
+        "country": "spain",
         "genus_species": "Meal",
         "method": "frozen",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/Original Pita Breads.jpg"
+        "image_address": "../Product-image/Original Pita Breads.jpg"
     },
 
     {
@@ -327,12 +327,12 @@
         "carbohydrates": 3.50,
         "shelf_life": 20,
         "storage_temperature": "7...15",
-        "country": "Spain",
+        "country": "spain",
         "genus_species": "Meal",
         "method": "frozen",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/Cassava Flour Tortillas.jpg"
+        "image_address": "../Product-image/Cassava Flour Tortillas.jpg"
     },
 
     {
@@ -348,12 +348,12 @@
         "carbohydrates": 3.50,
         "shelf_life": 20,
         "storage_temperature": "7...15",
-        "country": "Spain",
+        "country": "spain",
         "genus_species": "Meal",
         "method": "frozen",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/Pita Chia Flax.jpg"
+        "image_address": "../Product-image/Pita Chia Flax.jpg"
     },
 
     {
@@ -374,7 +374,7 @@
         "method": "frozen",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/Plant-Based Chicken Pieces.png"
+        "image_address": "../Product-image/Plant-Based Chicken Pieces.png"
     },
 
     {
@@ -395,7 +395,7 @@
         "method": "frozen",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/Crispy Jack Nuggets.webp"
+        "image_address": "../Product-image/Crispy Jack Nuggets.webp"
     },
 
     {
@@ -416,7 +416,7 @@
         "method": "frozen",
         "rate": 0,
         "weight": "each",
-        "image_address": "./Product-image/ultimate-plantbased-chickn-28047.png"
+        "image_address": "../Product-image/ultimate-plantbased-chickn-28047.png"
     }
     
 ]

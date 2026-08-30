@@ -6,7 +6,7 @@ const weeklyDiscountTrack = document.querySelector(".weekly_discount_track");
 const seafoodproductstrack = document.querySelector(".seafood_products_track")
 const bakeryproduct = document.querySelector(".bakery_products_track")
 const veganmeat = document.querySelector(".vegan_meat_products_track")
-const data_url = "./data/products.json";
+const data_url = "../data/products.json";
 const topFooterContent = document.getElementById("topFooterContent");
 const topFooterButton = document.getElementById("topFooterButton");
 

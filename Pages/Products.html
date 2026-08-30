@@ -533,12 +533,81 @@
                     <!-- ITEMS -->
                     <div class="items">
                         <div class="layout_of_item">
-                            <p>showing 1 -
-                                <span class="count_of_showing">9</span>
-                                of
-                                <span class="result_count">20</span>
-                                items
-                            </p>
+                            <div class="items_counting">
+                                <p>showing 1 -
+                                    <span class="count_of_showing">6</span>
+                                    of
+                                    <span class="result_count">20</span>
+                                    items
+                                </p>
+                            </div>
+                            <div class="layout_choosing">
+                                <div class="number_in_page">
+                                    <p>show:
+                                        <a href="#">
+                                            <span id="6">6</span>
+                                        </a>
+                                        /
+                                        <a href="#">
+                                            <span id="10">10</span>
+                                        </a>
+                                        /
+                                        <a href="#">
+                                            <span id="20">20</span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="items_layout_model">
+
+                                    <a href="#" class="layout_button" data-layout="1">
+                                        <img src="../images/icons8-menu-27.png" alt="">
+                                    </a>
+
+                                    <a href="#" class="layout_button" data-layout="4">
+                                        <img src="../images/icons8-grid-view-27.png" alt="">
+                                    </a>
+
+                                    <a href="#" class="layout_button" data-layout="6">
+                                        <img src="../images/icons8-grid-view-27 (1).png" alt="">
+                                    </a>
+
+                                </div>
+
+
+                                <div class="sort_box">
+                                    <select id="sort_products">
+                                        <option value="default">sort by ...</option>
+
+                                        <option value="price-low">
+                                            Price: Low to High
+                                        </option>
+
+                                        <option value="price-high">
+                                            Price: High to Low
+                                        </option>
+
+                                        <option value="name-a-z">
+                                            Name: A to Z
+                                        </option>
+
+                                        <option value="name-z-a">
+                                            Name: Z to A
+                                        </option>
+
+                                        <option value="rating-high">
+                                            Rating: High to Low
+                                        </option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <!-- FETCHING ITEMS -->
+                        <div class="fetching_items">
+
                         </div>
                     </div>
                 </section>
@@ -789,10 +858,63 @@
 
                 </section>
             </footer>
+            <!-- SEARCH PAGE -->
+            <div class="search_overlay" id="searchOverlay">
+
+                <button class="close_search" id="closeSearch">
+                    &times;
+                </button>
+
+                <div class="search_overlay_content">
+
+                    <div class="search_overlay_top">
 
 
-            <script src="../JAVA SCRIPT/menu.js"></script>
+                        <div class="search_input_box">
+
+                            <input type="text" id="searchInput" placeholder="Search for products..." autocomplete="off">
+                            <select id="search_dropdown" class="search_dropdown">
+                                <option value="" disabled selected>SELECT CATEGORY</option>
+                                <option value="Vegetable" class="dropdown_option">Vegetable & Fruits</option>
+                                <option value="bakery" class="dropdown_option">Bakery</option>
+                                <option value="Beverages" class="dropdown_option">Beverages</option>
+                                <option value="dairy" class="dropdown_option">Dairy</option>
+                                <option value="Seafood" class="dropdown_option">Seafood</option>
+                                <option value="VeganMeat" class="dropdown_option">Vegan Meat</option>
+                            </select>
+
+                            <button class="search_button">
+                                <img src="../images/icons8-search-24.png" alt="">
+                            </button>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="search_suggestions">
+
+                        <h3>POPULAR REQUEST</h3>
+
+                        <div class="suggestion_items">
+
+                            <a href="#">ّFrozen</a>
+                            <a href="#">Yogurt</a>
+                            <a href="#">Vegan</a>
+                            <a href="#">Water</a>
+                            <a href="#">Milk</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
             <script src="../JAVA SCRIPT/filter.js"></script>
+            <script src="../JAVA SCRIPT/search.js"></script>
+            <script src="../JAVA SCRIPT/Products.js"></script>
 </body>
 
 </html>
