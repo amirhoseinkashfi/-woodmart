@@ -1,0 +1,62 @@
+/* HEADER */
+.header h1 {
+    font-size: 32px;
+    color: #242424;
+}
+
+.header a {
+    font-size: 15px;
+    color: #767676;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.slash_header {
+    color: #767676;
+}
+
+.wishlist_span {
+    font-size: 15px;
+    color: #242424;
+    margin-left: 5px;
+}
+
+.header {
+    padding: 20px 15px;
+}
+
+.header div {
+    margin-top: 15px;
+}
+
+.main_of_empty_wishlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_of_empty_wishlist h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.main_of_empty_wishlist p{
+    font-size: 15px;
+    color: #777777;
+    width: 535px;
+    height: 48px;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.main_of_empty_wishlist a{
+    text-decoration: none;
+    font-size: 13px;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: #8cbc67;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}

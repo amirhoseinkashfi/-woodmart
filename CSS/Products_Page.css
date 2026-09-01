@@ -1,0 +1,363 @@
+.links_address {
+    padding: 20px 20px 0px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #767676;
+}
+
+.links_address p{
+    color: #767676;
+}
+
+.container_of_img_and_information{
+    display: flex;
+    gap: 30px;
+}
+
+.product_name{
+    color: #333;
+}
+
+.product_image{
+    width: 826px;
+    height: 628px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.product_image img{
+    width: 550px;
+    height: 628px;
+}
+
+.product_information{
+    width: 594px;
+    height: 628px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.product_information h1{
+    font-size: 34px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.product_rating{
+    width: 100%;
+    height: 20px;
+}
+
+.old_price{
+    text-decoration: line-through;
+    font-size: 20px;
+    color: #bbbbbb;
+}
+
+.current_price{
+    font-size: 23px;
+    color: #8cbc67;
+}
+
+.slash_product,.count_of_product{
+    font-size: 23px;
+    color: #bbbbbb;
+}
+
+.product_price{
+    margin: 20px 0px;
+}
+
+.product_quantity{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.add_to_cart{
+    height: 42px;
+    width: 450px;
+    background-color: #8cbc67;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.product_count_for_shop{
+    width: 70px;
+    height: 42px;
+    border: 1px solid #dddcdc;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.quantity_number{
+    border-left: 1px solid #dddcdc;
+    border-right: 1px solid #dddcdc;
+    width: 30px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_nutrition {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.nutrition_item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10px 10px;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.nutrition_title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.nutrition_value {
+    font-size: 15px;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.general_info{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.general_info h2{
+    margin-bottom: 25px;
+    color: #242424;
+    font-size: 18px;
+}
+
+.general_info_line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #242424;
+
+}
+
+.general_info_line div{
+    font-size: 15px;
+}
+
+.color_for_div{
+    color: #bbbbbb ;
+}
+
+
+/* RELATED PRODUCT */
+.related_products_section {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.related_products_header {
+    margin: 0 0 25px 10px;
+}
+
+.related_products_header h2 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.related_products_slider {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.related_products_slider::-webkit-scrollbar {
+    display: none;
+}
+
+.related_products_track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    padding: 10px 10px 0 10px;
+}
+
+.related_products_track .discount_product_wrapper {
+    position: relative;
+    flex: 0 0 250px;
+    width: 250px;
+    height: 360px;
+}
+
+.related_products_track .discount_product_box {
+    position: relative;
+    width: 250px;
+    height: 340px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.related_products_track .discount_product_wrapper:hover .discount_product_box {
+    transform: translateY(-10px);
+}
+
+.related_products_track .discount_product_image {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.related_products_track .discount_product_image img {
+    width: 180px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.related_products_track .discount_product_info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+
+.related_products_track .discount_product_box:hover .discount_product_info {
+    transform: translateY(-60px);
+}
+
+.related_products_track .discount_product_info h3 {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.related_products_track .title_of_discount_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.related_products_track .title_of_discount_box img {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+}
+
+.related_products_track .discount_product_price {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.related_products_track .old_price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #9d9a9a;
+}
+
+.related_products_track .current_price {
+    color: #8cbc67;
+}
+
+.related_products_track .slash_product {
+    margin: 0 5px;
+    color: #9d9a9a;
+}
+
+.related_products_track .count_of_product {
+    color: #9d9a9a;
+}
+
+.related_products_track .rate {
+    margin-left: 10px;
+}
+
+.related_products_track .rate img {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+.related_products_track .discount_product_actions {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    background-color: #fff;
+    opacity: 0;
+    transform: translateY(100%);
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+    z-index: 10;
+}
+
+.related_products_track .discount_product_box:hover .discount_product_actions {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.related_products_track .product_quantity {
+    width: 90px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.related_products_track .product_quantity button {
+    width: 30px;
+    height: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.related_products_track .quantity_number {
+    font-size: 14px;
+}
+
+.related_products_track .add_to_cart {
+    flex: 1;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8cbc67;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+}

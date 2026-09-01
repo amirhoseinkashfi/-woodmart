@@ -67,22 +67,32 @@ fetch(productsDataUrl)
 
                     <div class="discount_product_price">
 
-                        <span class="old_price">
-                            $${product.old_price.toFixed(2)}
-                        </span>
-
-                        <span class="current_price">
-                            $${product.price.toFixed(2)}
-                        </span>
-
+                        ${
+                            product.discount
+                            ? `
+                                <span class="old_price">
+                                    $${product.old_price.toFixed(2)}
+                                </span>
+                    
+                                <span class="current_price">
+                                    $${product.price.toFixed(2)}
+                                </span>
+                            `
+                            : `
+                                <span class="current_price">
+                                    $${product.price.toFixed(2)}
+                                </span>
+                            `
+                        }
+                    
                         <span class="slash_product">
                             /
                         </span>
-
+                    
                         <span class="count_of_product">
                             ${product.weight}
                         </span>
-
+                    
                         <span class="rate">
                             ${
                                 product.rate !== 0
@@ -90,7 +100,7 @@ fetch(productsDataUrl)
                                 : ""
                             }
                         </span>
-
+                
                     </div>
 
                 </div>
@@ -132,7 +142,7 @@ fetch(productsDataUrl)
             
             productWrapper.appendChild(productBox);
             fetchingItems.appendChild(productWrapper);
-            
+
         });
 
     })
