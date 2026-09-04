@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/Footer.css">
     <link rel="stylesheet" href="../CSS/products.css">
+    <link rel="stylesheet" href="../CSS/Responsive.css">
 </head>
 
 <body>
@@ -320,7 +321,7 @@
                         <li class="top_header_link"><a href="#" class="top_header_alink">
                                 <img src="../images/icons8-phone-14.png" alt="" class="img_header_top">(956) 238-7908
                             </a></li>
-                        <li class="top_header_link"><a href="#" class="top_header_alink">
+                        <li class="top_header_link"><a href="./Wishlist.html" class="top_header_alink">
                                 <img src="../images/icons8-heart-14.png" alt="" class="img_header_top">Wishlist
                             </a></li>
                         <li class="top_header_link"><a href="#" class="top_header_alink">
@@ -328,6 +329,11 @@
                                 Log / Register
                             </a></li>
                     </ul>
+
+                    <a href="#" class="logo_a_link_img_for_responsive"><img
+                            src="https://woodmart.xtemos.com/vegetables/wp-content/uploads/sites/20/2024/02/vg-logo-colored.svg"
+                            class="logo_img">
+                    </a>
                 </div>
 
                 <div class="bottom_header_wrapper">
@@ -339,7 +345,7 @@
                         </div>
 
                         <div class="second_item_in_header">
-                            <a href="#" class="all_categories_a_link">
+                            <a href="./Products.html" class="all_categories_a_link">
                                 <span class="all_categories_a_link_img_span"><img
                                         src="../images/icons8-menu-20.png"></span>
                                 <span>All Categories</span>
@@ -375,7 +381,7 @@
                         </div>
 
                         <div class="third_item_in_header">
-                            <a href="#" class="number_of_shopping_cart_a_link">
+                            <a href="./Cart.html" class="number_of_shopping_cart_a_link">
                                 <div class="shopping_cart">
                                     <img src="../images/icons8-shopping-cart-28.png" alt="" class="shopping_cart_icon">
                                 </div>
@@ -385,6 +391,30 @@
                             </a>
                         </div>
                     </div>
+                    <!-- RESPONSIVE -->
+                    <div class="res_1024_wrapper">
+
+                        <div class="res_1024">
+
+                            <div class="menu_for_1024">
+                                <img src="../images/icons8-menu-27.png" alt="">
+                            </div>
+
+                            <div class="search_box" id="responsiveSearchBox">
+                                <img src="../images/icons8-search-24.png" alt="" class="search_img">
+                                <span class="search_box_text">
+                                    Search for product
+                                </span>
+                            </div>
+
+                            <div class="person_icon">
+                                <img src="../images/person48.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </header>
@@ -429,6 +459,7 @@
                 </div>
 
 
+
                 <section class="filters_and_items">
                     <!-- FILTERS -->
                     <div class="filters">
@@ -437,35 +468,53 @@
                             <div class="filters_by_category">
 
                                 <h3>Product Categories</h3>
-
+                            
                                 <ul class="filters_category_list">
+                            
                                     <li>
-                                        <a href="#">Vegetables & Fruits</a>
+                                        <a href="#" data-category="Vegetables & Fruits">
+                                            Vegetables & Fruits
+                                        </a>
                                         <span class="count">0</span>
                                     </li>
+                            
                                     <li>
-                                        <a href="#">Bakery</a>
-                                        <span class="count">0</span>
-
-                                    </li>
-                                    <li>
-                                        <a href="#">Beverages</a>
+                                        <a href="#" data-category="Bakery">
+                                            Bakery
+                                        </a>
                                         <span class="count">0</span>
                                     </li>
+                            
                                     <li>
-                                        <a href="#">Dairy</a>
+                                        <a href="#" data-category="Beverages">
+                                            Beverages
+                                        </a>
                                         <span class="count">0</span>
                                     </li>
+                            
                                     <li>
-                                        <a href="#">SeaFood</a>
+                                        <a href="#" data-category="Dairy">
+                                            Dairy
+                                        </a>
                                         <span class="count">0</span>
                                     </li>
+                            
                                     <li>
-                                        <a href="#">Vegan Meat</a>
+                                        <a href="#" data-category="Seafood">
+                                            SeaFood
+                                        </a>
                                         <span class="count">0</span>
                                     </li>
+                            
+                                    <li>
+                                        <a href="#" data-category="Vegan Meat">
+                                            Vegan Meat
+                                        </a>
+                                        <span class="count">0</span>
+                                    </li>
+                            
                                 </ul>
-
+                            
                             </div>
                             <!-- FILTER BY PRICE -->
                             <div class="filters_by_price">
@@ -512,7 +561,7 @@
                                 </label>
 
                                 <label>
-                                    <input type="checkbox" value="Spain">
+                                    <input type="checkbox" value="spain">
                                     Spain
                                 </label>
 
@@ -534,7 +583,9 @@
                     <div class="items">
                         <div class="layout_of_item">
                             <div class="items_counting">
-                                <p>showing 1 -
+                                <p>
+                                    showing
+                                    <span class="start_count">1</span> -
                                     <span class="count_of_showing">6</span>
                                     of
                                     <span class="result_count">20</span>
@@ -543,17 +594,23 @@
                             </div>
                             <div class="layout_choosing">
                                 <div class="number_in_page">
-                                    <p>show:
-                                        <a href="#">
-                                            <span id="6">6</span>
+                                    <p>
+                                        show:
+
+                                        <a href="#" data-count="6" class="active">
+                                            <span>6</span>
                                         </a>
+
                                         /
-                                        <a href="#">
-                                            <span id="10">10</span>
+
+                                        <a href="#" data-count="10">
+                                            <span>10</span>
                                         </a>
+
                                         /
-                                        <a href="#">
-                                            <span id="20">20</span>
+
+                                        <a href="#" data-count="20">
+                                            <span>20</span>
                                         </a>
                                     </p>
                                 </div>
@@ -573,7 +630,9 @@
 
                                 </div>
 
-
+                                <div class="menu_for_responsing">
+                                    <img src="../images/icons8-menu-27.png" alt="">
+                                </div>
                                 <div class="sort_box">
                                     <select id="sort_products">
                                         <option value="default">sort by ...</option>
@@ -609,6 +668,7 @@
                         <div class="fetching_items">
 
                         </div>
+                        <div class="pagination"></div>
                     </div>
                 </section>
 
@@ -617,18 +677,6 @@
             </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-            <!-- FOOTER -->
             <footer>
                 <section class="top_footer">
 
@@ -740,55 +788,36 @@
                             </div>
 
 
-                            <div class="popular_category_footer">
+                            <div class="popular_category_footer footer_accordion">
 
-                                <h3>Popular Categories</h3>
+                                <div class="footer_accordion_header">
+                                    <h3>Popular Categories</h3>
+                                    <span class="footer_arrow">⌄</span>
+                                </div>
 
                                 <ul>
-                                    <li>
-                                        <a href="#">Vegetables & Fruits</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Seafood</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Dairy</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Fresh Fish</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Mushrooms</a>
-                                    </li>
+                                    <li><a href="#">Vegetables & Fruits</a></li>
+                                    <li><a href="#">Seafood</a></li>
+                                    <li><a href="#">Dairy</a></li>
+                                    <li><a href="#">Fresh Fish</a></li>
+                                    <li><a href="#">Mushrooms</a></li>
                                 </ul>
 
                             </div>
 
 
-                            <div class="useful_links_footer">
+                            <div class="useful_links_footer footer_accordion">
 
-                                <h3>Useful Links</h3>
+                                <div class="footer_accordion_header">
+                                    <h3>Useful Links</h3>
+                                    <span class="footer_arrow">⌄</span>
+                                </div>
 
                                 <ul>
-                                    <li>
-                                        <a href="#">About Us</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Contact Us</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Delivery</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Blog</a>
-                                    </li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Delivery</a></li>
+                                    <li><a href="#">Blog</a></li>
                                 </ul>
 
                             </div>
@@ -858,6 +887,98 @@
 
                 </section>
             </footer>
+
+            <!-- BOTTOM NAV FOR RESPONSIVE -->
+            <div class="mobile_bottom_bar">
+
+                <a href="#" class="bottom_bar_item" id="mobileMenuButton">
+                    <img src="../images/icons8-menu-27.png" alt="">
+                    <span>Menu</span>
+                </a>
+
+                <a href="./Wishlist.html" class="bottom_bar_item">
+                    <img src="../images/icons8-heart-20.png" alt="">
+                    <span>Wishlist</span>
+                </a>
+
+                <a href="./Cart.html" class="bottom_bar_item">
+                    <img src="../images/icons8-shopping-cart-28.png" alt="">
+                    <span>Cart</span>
+                </a>
+
+            </div>
+
+            <!-- RIGHT NAV BAR FOR RESPONSIVE -->
+            <div class="menu_overlay" id="menuOverlay"></div>
+
+            <div class="left_menu" id="leftMenu">
+
+                <div class="left_menu_header">
+                    <button class="left_menu_tab" data-target="categoryContent">
+                        Categories
+                    </button>
+
+                    <button class="left_menu_tab active" data-target="menuContent">
+                        Menu
+                    </button>
+
+
+                    <button class="close_menu" id="closeMenu">
+                        ×
+                    </button>
+
+                </div>
+
+                <div class="left_menu_content active" id="menuContent">
+                    <a href="./index.html" class="category_menu_item">Home</a>
+                    <a href="#" class="category_menu_item">Demos</a>
+                    <a href="#" class="category_menu_item">Promotion</a>
+                    <a href="#" class="category_menu_item">Ideas For Breakfast</a>
+                    <a href="#" class="category_menu_item">About Us</a>
+                    <a href="#" class="category_menu_item">Contact Us</a>
+                    <a href="#" class="category_menu_item">Delivery</a>
+                    <a href="#" class="category_menu_item">Store Location</a>
+                    <a href="./Wishlist.html" class="category_menu_item">Wishlist</a>
+                    <a href="#" class="category_menu_item">Login/Register</a>
+                </div>
+
+                <div class="left_menu_content" id="categoryContent">
+
+                    <a href="./Products.html" class="category_menu_item">
+                        <span>Vegetables & Fruits</span>
+                        <span class="category_arrow">›</span>
+                    </a>
+
+                    <a href="./Products.html" class="category_menu_item">
+                        <span>Vegan Meat</span>
+                        <span class="category_arrow">›</span>
+                    </a>
+
+                    <a href="./Products.html" class="category_menu_item">
+                        <span>SeaFood</span>
+                        <span class="category_arrow">›</span>
+                    </a>
+
+                    <a href="./Products.html" class="category_menu_item">
+                        <span>Dairy</span>
+                        <span class="category_arrow">›</span>
+                    </a>
+
+                    <a href="./Products.html" class="category_menu_item">
+                        <span>Bakery</span>
+                        <span class="category_arrow">›</span>
+                    </a>
+
+                    <a href="./Products.html" class="category_menu_item">
+                        <span>Beverages</span>
+                        <span class="category_arrow">›</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
             <!-- SEARCH PAGE -->
             <div class="search_overlay" id="searchOverlay">
 
@@ -874,16 +995,38 @@
 
                             <input type="text" id="searchInput" placeholder="Search for products..." autocomplete="off">
                             <select id="search_dropdown" class="search_dropdown">
-                                <option value="" disabled selected>SELECT CATEGORY</option>
-                                <option value="Vegetable" class="dropdown_option">Vegetable & Fruits</option>
-                                <option value="bakery" class="dropdown_option">Bakery</option>
-                                <option value="Beverages" class="dropdown_option">Beverages</option>
-                                <option value="dairy" class="dropdown_option">Dairy</option>
-                                <option value="Seafood" class="dropdown_option">Seafood</option>
-                                <option value="VeganMeat" class="dropdown_option">Vegan Meat</option>
+
+                                <option value="" disabled selected>
+                                    SELECT CATEGORY
+                                </option>
+                            
+                                <option value="Vegetables & Fruits">
+                                    Vegetable & Fruits
+                                </option>
+                            
+                                <option value="Bakery">
+                                    Bakery
+                                </option>
+                            
+                                <option value="Beverages">
+                                    Beverages
+                                </option>
+                            
+                                <option value="Dairy">
+                                    Dairy
+                                </option>
+                            
+                                <option value="Seafood">
+                                    Seafood
+                                </option>
+                            
+                                <option value="Vegan Meat">
+                                    Vegan Meat
+                                </option>
+                            
                             </select>
 
-                            <button class="search_button">
+                            <button class="search_button" id="searchButton">
                                 <img src="../images/icons8-search-24.png" alt="">
                             </button>
                         </div>
@@ -912,9 +1055,9 @@
 
             </div>
 
+            <script src="../JAVA SCRIPT/Products.js"></script>
             <script src="../JAVA SCRIPT/filter.js"></script>
             <script src="../JAVA SCRIPT/search.js"></script>
-            <script src="../JAVA SCRIPT/Products.js"></script>
 </body>
 
 </html>

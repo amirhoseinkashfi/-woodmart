@@ -590,9 +590,7 @@ body {
 }
 
 
-/* =========================================================
-   WEEKLY DISCOUNT
-========================================================= */
+
 
 .weekly_discount {
     margin-top: 100px;
@@ -946,3 +944,6 @@ body {
     font-weight: 500;
 }
 
+#top_main_div_scrollbar_for_responsive{
+    display: none;
+}
